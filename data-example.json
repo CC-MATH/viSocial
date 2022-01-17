@@ -1,0 +1,52 @@
+{
+    "actores":[
+        {
+            "clave": 2661,
+            "nombre":"Actor1"
+        },
+        {
+            "clave": 2701,
+            "nombre":"Actor2"
+        }
+    ],
+    "tareas":[
+        {
+            "clave":1,
+            "nombre":"Tarea1",
+            "efectividad":1,
+            "repercusion":"positivo"
+        },
+        {
+            "clave":2,
+            "nombre":"Tarea2",
+            "efectividad":3,
+            "repercusion":"neutro"
+        },
+        {
+            "clave":4,
+            "nombre":"Tarea3",
+            "efectividad":5,
+            "repercusion":"negativo"
+        }
+    ],
+    "actividades":[
+        {
+            "tarea-id" : 1,
+            "actor-id" : 2661,
+            "time-stamp" : 1642298400000
+        },
+        {
+            "tarea-id" : 2,
+            "actor-id" : 2661,
+            "time-stamp" : 1642298400000,
+            "hijos":[
+                1,4
+            ]
+        },
+        {
+            "tarea-id" : 4,
+            "actor-id" : 2701,
+            "time-stamp" : 1642298400000
+        }
+    ]
+}
